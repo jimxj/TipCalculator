@@ -49,7 +49,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         refreshNumbers()
     }
 
-    
     @IBAction func onGroupChanged(sender: AnyObject) {
         refreshEach()
     }
@@ -84,9 +83,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
         tipLabel.text = formatAmount(tipAmount);
         totalLabel.text = formatAmount(billAmount + tipAmount)
-        if splitSwitch.on {
-            eachDueLabel.text = formatAmount((billAmount + tipAmount) / Double(groupField.text.toInt()!))
-        }
+        refreshEach()
     }
     
     func refreshEach() {
@@ -94,7 +91,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var tipAmount = billAmount * settingsManager.tipPecentages[tipSeg.selectedSegmentIndex];
         
         if splitSwitch.on {
-            eachDueLabel.text = formatAmount((billAmount + tipAmount) / Double(groupField.text.toInt()!))
+            if nil == groupField.text.toInt() {
+                eachDueLabel.text = totalLabel.text
+            } else {
+                eachDueLabel.text = formatAmount((billAmount + tipAmount) / Double(groupField.text.toInt()!))
+            }
         }
     }
     

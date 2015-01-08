@@ -63,6 +63,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate {
         // Pass the selected object to the new view controller.
         if sender as UIBarButtonItem == saveButton {
             settingsManager.saveDefaultCurrencyIndex(currencyPicker.selectedRowInComponent(0))
+            settingsManager.saveDefaultTipPercentageIndex(defaultPercentagePicker.selectedRowInComponent(0))
         }
     }
     

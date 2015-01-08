@@ -114,7 +114,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
-                                    <action selector="onGroupChanged:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="h51-xc-Dio"/>
+                                    <action selector="onGroupChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="ZXR-8E-LUj"/>
                                 </connections>
                             </textField>
                         </subviews>
