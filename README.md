@@ -16,5 +16,7 @@ Before that, I spent about 2 days to walk through the swift tutorial, "Start Dev
 3. Load and save default currency symbol from/to NSUserDefaults
 4. Added basic unit test
 
+##GIF walkthrough
+[Demo](demo.gif)
 
 
