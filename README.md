@@ -17,6 +17,5 @@ Before that, I spent about 2 days to walk through the swift tutorial, "Start Dev
 4. Added basic unit test
 
 ##GIF walkthrough
-[Demo](demo.gif)
-
+![Demo](demo.gif)
 
